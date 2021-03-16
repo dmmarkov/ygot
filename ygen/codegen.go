@@ -1122,6 +1122,8 @@ func createFakeRoot(structs map[string]*yang.Entry, rootElems []*yang.Entry, roo
 	fakeRoot := MakeFakeRoot(rootName)
 
 	for _, s := range findRootEntries(structs, compressPaths) {
+		fmt.Sprintf("%s_%s", s.Parent.Name, s.Name)
+
 		if e, ok := fakeRoot.Dir[s.Name]; ok {
 			return fmt.Errorf("duplicate entry %s at the root: exists: %v, new: %v", s.Name, e.Path(), s.Path())
 		}
