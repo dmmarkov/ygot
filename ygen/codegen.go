@@ -1122,15 +1122,19 @@ func createFakeRoot(structs map[string]*yang.Entry, rootElems []*yang.Entry, roo
 	fakeRoot := MakeFakeRoot(rootName)
 
 	for _, s := range findRootEntries(structs, compressPaths) {
-		if e, ok := fakeRoot.Dir[s.Path()]; ok {
-			return fmt.Errorf("duplicate entry %s at the root: exists: %v, new: %v", s.Name, e.Path(), s.Path())
+		if _, ok := fakeRoot.Dir[s.Name]; ok {
+			newName := s.Name + "_"
+
+			fakeRoot.Dir[newName] = s
+			// return fmt.Errorf("duplicate entry %s at the root: exists: %v, new: %v", s.Name, e.Path(), s.Path())
+		} else {
+			fakeRoot.Dir[s.Name] = s
 		}
-		fakeRoot.Dir[s.Path()] = s
 	}
 
 	for _, l := range rootElems {
 		if l.IsLeaf() || l.IsLeafList() {
-			fakeRoot.Dir[l.Path()] = l
+			fakeRoot.Dir[l.Name] = l
 		}
 	}
 

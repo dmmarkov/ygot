@@ -461,10 +461,16 @@ func addNonChoiceChildren(m map[string]*yang.Entry, e *yang.Entry, errs []error)
 func addNewChild(m map[string]*yang.Entry, k string, v *yang.Entry, errs []error) []error {
 	if _, ok := m[k]; !ok {
 		m[k] = v
-		return errs
+	} else {
+		newK := k + "_"
+
+		m[newK] = v
 	}
-	errs = append(errs, fmt.Errorf("%s was duplicate", v.Path()))
+
 	return errs
+
+	// errs = append(errs, fmt.Errorf("%s was duplicate", v.Path()))
+	// return errs
 }
 
 // TransformEntry makes changes to the given AST subtree returned by goyang
