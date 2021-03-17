@@ -22,8 +22,8 @@ import (
 	"fmt"
 
 	log "github.com/golang/glog"
-	oc "github.com/openconfig/ygot/exampleoc"
-	"github.com/openconfig/ygot/ygot"
+	oc "github.com/dmmarkov/ygot/exampleoc"
+	"github.com/dmmarkov/ygot/ygot"
 )
 
 func main() {

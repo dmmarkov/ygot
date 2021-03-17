@@ -24,9 +24,9 @@ import (
 	"github.com/openconfig/gnmi/errdiff"
 	gpb "github.com/openconfig/gnmi/proto/gnmi"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/testutil"
-	"github.com/openconfig/ygot/util"
-	"github.com/openconfig/ygot/ygot"
+	"github.com/dmmarkov/ygot/testutil"
+	"github.com/dmmarkov/ygot/util"
+	"github.com/dmmarkov/ygot/ygot"
 )
 
 var validLeafListSchema = &yang.Entry{

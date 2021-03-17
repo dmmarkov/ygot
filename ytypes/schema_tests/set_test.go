@@ -21,11 +21,11 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/openconfig/gnmi/errdiff"
-	"github.com/openconfig/ygot/exampleoc"
-	"github.com/openconfig/ygot/exampleoc/opstateoc"
-	"github.com/openconfig/ygot/uexampleoc"
-	"github.com/openconfig/ygot/ygot"
-	"github.com/openconfig/ygot/ytypes"
+	"github.com/dmmarkov/ygot/exampleoc"
+	"github.com/dmmarkov/ygot/exampleoc/opstateoc"
+	"github.com/dmmarkov/ygot/uexampleoc"
+	"github.com/dmmarkov/ygot/ygot"
+	"github.com/dmmarkov/ygot/ytypes"
 
 	gpb "github.com/openconfig/gnmi/proto/gnmi"
 )

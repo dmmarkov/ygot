@@ -22,7 +22,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	gnmipb "github.com/openconfig/gnmi/proto/gnmi"
-	"github.com/openconfig/ygot/ygot"
+	"github.com/dmmarkov/ygot/ygot"
 	"google.golang.org/protobuf/testing/protocmp"
 )
 

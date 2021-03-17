@@ -27,8 +27,8 @@ import (
 
 	log "github.com/golang/glog"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/ygen"
+	"github.com/dmmarkov/ygot/genutil"
+	"github.com/dmmarkov/ygot/ygen"
 )
 
 var (

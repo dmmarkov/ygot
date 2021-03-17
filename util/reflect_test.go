@@ -23,7 +23,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/kylelemons/godebug/pretty"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/testutil"
+	"github.com/dmmarkov/ygot/testutil"
 
 	gpb "github.com/openconfig/gnmi/proto/gnmi"
 )

@@ -21,7 +21,7 @@ import (
 	"unicode/utf8"
 
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/util"
+	"github.com/dmmarkov/ygot/util"
 )
 
 // Refer to: https://tools.ietf.org/html/rfc6020#section-9.4.

@@ -16,8 +16,8 @@ package ygen
 
 import (
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/ygot"
+	"github.com/dmmarkov/ygot/genutil"
+	"github.com/dmmarkov/ygot/ygot"
 )
 
 // This file describes the intermediate representation that is produced by

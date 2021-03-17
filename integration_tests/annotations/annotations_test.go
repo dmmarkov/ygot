@@ -20,14 +20,14 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/openconfig/gnmi/errdiff"
-	oc "github.com/openconfig/ygot/exampleoc"
-	"github.com/openconfig/ygot/ygot"
+	oc "github.com/dmmarkov/ygot/exampleoc"
+	"github.com/dmmarkov/ygot/ygot"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
 
 	gpb "github.com/openconfig/gnmi/proto/gnmi"
-	"github.com/openconfig/ygot/integration_tests/annotations/apb"
-	"github.com/openconfig/ygot/integration_tests/annotations/proto2apb"
+	"github.com/dmmarkov/ygot/integration_tests/annotations/apb"
+	"github.com/dmmarkov/ygot/integration_tests/annotations/proto2apb"
 )
 
 type IncludedProto3 struct {

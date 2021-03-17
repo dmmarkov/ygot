@@ -21,7 +21,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
+	"github.com/dmmarkov/ygot/genutil"
 )
 
 func TestOrderedUnionTypes(t *testing.T) {

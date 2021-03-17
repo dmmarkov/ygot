@@ -21,7 +21,7 @@ import (
 	"strings"
 
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/util"
+	"github.com/dmmarkov/ygot/util"
 )
 
 //lint:file-ignore U1000 Ignore all unused code, it represents generated code.

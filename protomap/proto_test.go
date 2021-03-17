@@ -25,10 +25,10 @@ import (
 	"google.golang.org/protobuf/testing/protocmp"
 
 	gpb "github.com/openconfig/gnmi/proto/gnmi"
-	wpb "github.com/openconfig/ygot/proto/ywrapper"
-	epb "github.com/openconfig/ygot/protomap/testdata/exschemapath"
-	"github.com/openconfig/ygot/testutil"
-	"github.com/openconfig/ygot/ygot"
+	wpb "github.com/dmmarkov/ygot/proto/ywrapper"
+	epb "github.com/dmmarkov/ygot/protomap/testdata/exschemapath"
+	"github.com/dmmarkov/ygot/testutil"
+	"github.com/dmmarkov/ygot/ygot"
 )
 
 func mustPath(p string) *gpb.Path {

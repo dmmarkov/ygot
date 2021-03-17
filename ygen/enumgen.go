@@ -20,8 +20,8 @@ import (
 	"strings"
 
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/util"
+	"github.com/dmmarkov/ygot/genutil"
+	"github.com/dmmarkov/ygot/util"
 )
 
 const (
@@ -281,7 +281,7 @@ func (s *enumSet) enumeratedTypedefKey(args resolveTypeArgs, noUnderscores, useD
 		return "", "", fmt.Errorf("nil Node in enum type %s", args.contextEntry.Name)
 	}
 
-	// TODO(wenbli) to be deprecated: // https://github.com/openconfig/ygot/issues/404
+	// TODO(wenbli) to be deprecated: // https://github.com/dmmarkov/ygot/issues/404
 	// This is the old, buggy behaviour that causes same-named typedefs to shadow one another.
 	enumKey := fmt.Sprintf("%s/%s", genutil.ParentModuleName(args.contextEntry.Node), typeName)
 	if useDefiningModuleForTypedefEnumNames {

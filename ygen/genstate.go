@@ -20,9 +20,9 @@ import (
 	"strings"
 
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/util"
-	"github.com/openconfig/ygot/ygot"
+	"github.com/dmmarkov/ygot/genutil"
+	"github.com/dmmarkov/ygot/util"
+	"github.com/dmmarkov/ygot/ygot"
 )
 
 // MappedType is used to store the generated language type that a leaf entity

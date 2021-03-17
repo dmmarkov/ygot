@@ -20,7 +20,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/util"
+	"github.com/dmmarkov/ygot/util"
 )
 
 // getJSONTreeValForField returns the JSON subtree of the provided tree that

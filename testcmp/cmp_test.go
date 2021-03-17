@@ -19,11 +19,11 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/openconfig/gnmi/errdiff"
-	"github.com/openconfig/ygot/exampleoc"
-	"github.com/openconfig/ygot/testutil"
-	"github.com/openconfig/ygot/uexampleoc"
-	"github.com/openconfig/ygot/ygot"
-	"github.com/openconfig/ygot/ytypes"
+	"github.com/dmmarkov/ygot/exampleoc"
+	"github.com/dmmarkov/ygot/testutil"
+	"github.com/dmmarkov/ygot/uexampleoc"
+	"github.com/dmmarkov/ygot/ygot"
+	"github.com/dmmarkov/ygot/ytypes"
 	"google.golang.org/protobuf/testing/protocmp"
 
 	gnmipb "github.com/openconfig/gnmi/proto/gnmi"

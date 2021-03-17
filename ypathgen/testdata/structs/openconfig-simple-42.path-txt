@@ -11,8 +11,8 @@ Imported modules were sourced from:
 package ocpathstructs
 
 import (
-	oc "github.com/openconfig/ygot/ypathgen/testdata/exampleoc"
-	"github.com/openconfig/ygot/ygot"
+	oc "github.com/dmmarkov/ygot/ypathgen/testdata/exampleoc"
+	"github.com/dmmarkov/ygot/ygot"
 )
 
 // Parent_Child represents the /openconfig-simple/parent/child YANG schema element.

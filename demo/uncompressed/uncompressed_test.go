@@ -21,9 +21,9 @@ import (
 	"testing"
 
 	"github.com/kylelemons/godebug/pretty"
-	"github.com/openconfig/ygot/testutil"
+	"github.com/dmmarkov/ygot/testutil"
 
-	yb "github.com/openconfig/ygot/demo/uncompressed/pkg/demo"
+	yb "github.com/dmmarkov/ygot/demo/uncompressed/pkg/demo"
 )
 
 const (

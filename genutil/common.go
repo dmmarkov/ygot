@@ -23,17 +23,17 @@ import (
 	"strings"
 
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/util"
-	"github.com/openconfig/ygot/ygot"
+	"github.com/dmmarkov/ygot/util"
+	"github.com/dmmarkov/ygot/ygot"
 )
 
 const (
 	// GoDefaultYgotImportPath is the default import path used for the ygot library
 	// in the generated code.
-	GoDefaultYgotImportPath string = "github.com/openconfig/ygot/ygot"
+	GoDefaultYgotImportPath string = "github.com/dmmarkov/ygot/ygot"
 	// GoDefaultYtypesImportPath is the default import path used for the ytypes library
 	// in the generated code.
-	GoDefaultYtypesImportPath string = "github.com/openconfig/ygot/ytypes"
+	GoDefaultYtypesImportPath string = "github.com/dmmarkov/ygot/ytypes"
 	// GoDefaultGoyangImportPath is the default path for the goyang/pkg/yang library that
 	// is used in the generated code.
 	GoDefaultGoyangImportPath string = "github.com/openconfig/goyang/pkg/yang"

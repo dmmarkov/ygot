@@ -16,8 +16,8 @@ package openconfig_enums
 
 import (
 	proto "github.com/golang/protobuf/proto"
-	_ "github.com/openconfig/ygot/proto/yext"
-	_ "github.com/openconfig/ygot/proto/ywrapper"
+	_ "github.com/dmmarkov/ygot/proto/yext"
+	_ "github.com/dmmarkov/ygot/proto/ywrapper"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

@@ -18,7 +18,7 @@ import (
 	"reflect"
 
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/ygot"
+	"github.com/dmmarkov/ygot/ygot"
 )
 
 // Schema specifies the common types that are part of a generated ygot schema, such that

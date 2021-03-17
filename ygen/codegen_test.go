@@ -28,8 +28,8 @@ import (
 	"github.com/kylelemons/godebug/pretty"
 	"github.com/openconfig/gnmi/errdiff"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/testutil"
+	"github.com/dmmarkov/ygot/genutil"
+	"github.com/dmmarkov/ygot/testutil"
 )
 
 const (

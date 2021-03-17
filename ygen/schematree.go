@@ -21,7 +21,7 @@ import (
 
 	"github.com/openconfig/gnmi/ctree"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/util"
+	"github.com/dmmarkov/ygot/util"
 )
 
 // schemaTree contains a ctree.Tree that stores a copy of the YANG schema tree

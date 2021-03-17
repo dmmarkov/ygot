@@ -24,8 +24,8 @@ import (
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/openconfig/gnmi/errdiff"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/testutil"
-	"github.com/openconfig/ygot/ygen"
+	"github.com/dmmarkov/ygot/testutil"
+	"github.com/dmmarkov/ygot/ygen"
 )
 
 const (
@@ -229,7 +229,7 @@ func TestGeneratePathCode(t *testing.T) {
 		inPreferOperationalState:               true,
 		inShortenEnumLeafNames:                 true,
 		inUseDefiningModuleForTypedefEnumNames: true,
-		inSchemaStructPkgPath:                  "github.com/openconfig/ygot/ypathgen/testdata/exampleoc",
+		inSchemaStructPkgPath:                  "github.com/dmmarkov/ygot/ypathgen/testdata/exampleoc",
 		inPathStructSuffix:                     "",
 		wantStructsCodeFile:                    filepath.Join(TestRoot, "testdata/structs/openconfig-withlist-separate-package.path-txt"),
 	}, {
@@ -517,7 +517,7 @@ func TestGeneratePathCode(t *testing.T) {
 		inPreferOperationalState:               true,
 		inShortenEnumLeafNames:                 true,
 		inUseDefiningModuleForTypedefEnumNames: true,
-		inSchemaStructPkgPath:                  "github.com/openconfig/ygot/ypathgen/testdata/exampleoc",
+		inSchemaStructPkgPath:                  "github.com/dmmarkov/ygot/ypathgen/testdata/exampleoc",
 		inPathStructSuffix:                     "",
 		wantStructsCodeFile:                    filepath.Join(TestRoot, "testdata/structs/openconfig-augmented.path-txt"),
 		wantNodeDataMap: NodeDataMap{
@@ -658,7 +658,7 @@ func TestGeneratePathCodeSplitFiles(t *testing.T) {
 		name:                  "fileNumber is exactly the total number of structs",
 		inFiles:               []string{filepath.Join(datapath, "openconfig-simple.yang")},
 		inFileNumber:          4,
-		inSchemaStructPkgPath: "github.com/openconfig/ygot/ypathgen/testdata/exampleoc",
+		inSchemaStructPkgPath: "github.com/dmmarkov/ygot/ypathgen/testdata/exampleoc",
 		wantStructsCodeFiles:  []string{filepath.Join(TestRoot, "testdata/structs/openconfig-simple-40.path-txt"), filepath.Join(TestRoot, "testdata/structs/openconfig-simple-41.path-txt"), filepath.Join(TestRoot, "testdata/structs/openconfig-simple-42.path-txt"), filepath.Join(TestRoot, "testdata/structs/openconfig-simple-43.path-txt")},
 	}, {
 		name:                  "fileNumber is just under the total number of structs",
@@ -670,7 +670,7 @@ func TestGeneratePathCodeSplitFiles(t *testing.T) {
 		name:                  "fileNumber is half the total number of structs",
 		inFiles:               []string{filepath.Join(datapath, "openconfig-simple.yang")},
 		inFileNumber:          2,
-		inSchemaStructPkgPath: "github.com/openconfig/ygot/ypathgen/testdata/exampleoc",
+		inSchemaStructPkgPath: "github.com/dmmarkov/ygot/ypathgen/testdata/exampleoc",
 		wantStructsCodeFiles:  []string{filepath.Join(TestRoot, "testdata/structs/openconfig-simple-0.path-txt"), filepath.Join(TestRoot, "testdata/structs/openconfig-simple-1.path-txt")},
 	}, {
 		name:                  "single file",

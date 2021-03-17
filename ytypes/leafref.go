@@ -23,8 +23,8 @@ import (
 	log "github.com/golang/glog"
 	"github.com/google/go-cmp/cmp"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/util"
-	"github.com/openconfig/ygot/ygot"
+	"github.com/dmmarkov/ygot/util"
+	"github.com/dmmarkov/ygot/ygot"
 
 	gpb "github.com/openconfig/gnmi/proto/gnmi"
 )

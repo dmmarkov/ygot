@@ -19,7 +19,7 @@ import (
 	"fmt"
 
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/util"
+	"github.com/dmmarkov/ygot/util"
 )
 
 // UnmarshalOpt is an interface used for any option to be supplied

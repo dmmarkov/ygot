@@ -24,12 +24,12 @@ import (
 	"github.com/kylelemons/godebug/pretty"
 	"github.com/openconfig/gnmi/errdiff"
 	"github.com/openconfig/gnmi/value"
-	"github.com/openconfig/ygot/exampleoc"
-	"github.com/openconfig/ygot/exampleoc/opstateoc"
-	"github.com/openconfig/ygot/exampleoc/wrapperunionoc"
-	"github.com/openconfig/ygot/testutil"
-	"github.com/openconfig/ygot/uexampleoc"
-	"github.com/openconfig/ygot/ygot"
+	"github.com/dmmarkov/ygot/exampleoc"
+	"github.com/dmmarkov/ygot/exampleoc/opstateoc"
+	"github.com/dmmarkov/ygot/exampleoc/wrapperunionoc"
+	"github.com/dmmarkov/ygot/testutil"
+	"github.com/dmmarkov/ygot/uexampleoc"
+	"github.com/dmmarkov/ygot/ygot"
 
 	gnmipb "github.com/openconfig/gnmi/proto/gnmi"
 )

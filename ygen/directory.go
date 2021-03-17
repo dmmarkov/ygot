@@ -23,8 +23,8 @@ import (
 	"sort"
 
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/util"
+	"github.com/dmmarkov/ygot/genutil"
+	"github.com/dmmarkov/ygot/util"
 )
 
 // Directory stores information needed for outputting a data node of the
