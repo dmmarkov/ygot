@@ -74,6 +74,9 @@ func buildJSONTree(ms []*yang.Entry, dn map[string]string, fakeroot *yang.Entry,
 	if len(j) == 0 {
 		return nil, nil
 	}
+
+	fmt.Println("buildJSONTree.Marsal: ", string(j))
+
 	return j, nil
 }
 

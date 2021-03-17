@@ -97,11 +97,15 @@ func GoFieldNameMap(directory *Directory) map[string]string {
 	// Order by schema name; then, uniquify in order of schema name.
 	orderedFieldNames := GetOrderedFieldNames(directory)
 
+	fmt.Println("orderedFieldNames: ", orderedFieldNames)
+
 	uniqueGenFieldNames := map[string]bool{}
 	uniqueNameMap := make(map[string]string, len(directory.Fields))
 	for _, fieldName := range orderedFieldNames {
 		uniqueNameMap[fieldName] = genutil.MakeNameUnique(genutil.EntryCamelCaseName(directory.Fields[fieldName]), uniqueGenFieldNames)
 	}
+
+	fmt.Println("uniqueNameMap: ", uniqueNameMap)
 
 	return uniqueNameMap
 }
